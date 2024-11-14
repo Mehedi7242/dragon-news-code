@@ -2,7 +2,7 @@ import React from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser } from '@fortawesome/free-solid-svg-icons'
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 const Navbar = () => {
     const Links = <>
         <button className="btn btn-ghost text-xl">
@@ -14,14 +14,14 @@ const Navbar = () => {
     </>
     return (
         <div>
-            <div className="navbar bg-base-100">
+            <div className="navbar">
                 <div className="navbar-start">
                 </div>
      
                 <div className="navbar-center">
-                    <button className="btn btn-ghost ">Home</button>
-                    <button className="btn btn-ghost ">Career</button>
-                    <button className="btn btn-ghost ">About</button>
+                    <NavLink to={'/'} className="btn btn-ghost ">Home</NavLink>
+                    <NavLink className="btn btn-ghost ">Career</NavLink>
+                    <NavLink className="btn btn-ghost ">About</NavLink>
 
                 </div>
                 <div className="navbar-end">
